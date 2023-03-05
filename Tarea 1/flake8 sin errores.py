@@ -9,7 +9,7 @@ def divide_string(frase, operacion):
         print("Error: La operación debe ser un entero")
         return 56  # Regresa el código de error único 56
 
-    if operacion ==1:  # Determina si la operación es de tipo 1, es decir, separa las mayúsculas de las
+    if operacion == 1:  # Determina si la operación es de tipo 1, es decir, separa las mayúsculas de las
         # minúsculas del string generando dos strings.
         # Crea a los string de salida mayusculas y minusculas.
         mayusculas = ""
@@ -22,13 +22,13 @@ def divide_string(frase, operacion):
                 minusculas += caracter  # Agrega el caracter de la cadena que está analizando al string minusculas.
             else:
                 minusculas += caracter  # Agrega el caracter de la cadena que está analizando al string minusculas.
-        return minusculas,mayusculas  # Retorna a los string mayusculas y minusculas.
+        return minusculas, mayusculas  # Retorna a los string mayusculas y minusculas.
     if operacion == 2:  # Determina si la operación es de tipo 1, es decir, si divide el string por la mitad.
         mitad = len(frase)//2  # Realiza la división entera del número de caracteres de la frase.
         if (len(frase)) % 2 == 0:  # Determina si la cantidad de caracteres es par.
             parte1 = frase[:mitad]  # Asigna al string parte1 los primeros "mitad" de valores de la cadena
             # de caracteres de frase.
-            parte2 = frase[ mitad:]  # Asigna al string parte2 los segundos "mitad" de valores de la cadena
+            parte2 = frase[mitad:]  # Asigna al string parte2 los segundos "mitad" de valores de la cadena
             # de caracteres de frase.
         else:  # En caso de ser impar.
             parte1 = frase[:mitad+1]  # Asigna al string parte1 los primeros "mitad+1" de valores de la cadena
